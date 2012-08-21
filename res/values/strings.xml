@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yt-Video-Downloader</string>
+    <string name="empty"></string>
+    <string name="download">Start download</string>
+    <string name="check_quali">High Quality</string>
+    <string name="label_url">Please type in the Youtube-URL!</string>
+    <string name="b_next">Download Video</string>
+    <color name="reds">#FF0000</color>
+     <color name="black">#000000</color>
+    <string name="load_thumbnail">Click here to load a thumbnail</string>
+    <string name="check_SDCard">SD-Card</string>
+   <string name="MenuItem">Show VideoList</string>
+    <string name="play">Play Video</string>
+   <string name="delete">Delete Video</string>
+   <string name="cancel">Cancel</string>
+   <string name="ENoInternetAccess">No Internet Access!</string>
+   <string name="EScriptOffline">Required Server offline!</string>
+   
+</resources>

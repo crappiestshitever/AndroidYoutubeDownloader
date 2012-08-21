@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/edit_video_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_weight="0.25"
+                    android:gravity="center_horizontal"
+                    android:text="@string/empty"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="17dip" />
+
+                <TextView
+                    android:id="@+id/text_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:text="@string/empty"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="10dip" />
+
+                <CheckBox
+                    android:id="@+id/check_SDCard"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/check_SDCard" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/choice_quali"
+            android:layout_width="175dp"
+            android:layout_height="50dip"
+            android:layout_weight="0.88" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/b_download"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:text="@string/download" />
+
+    </LinearLayout>
+
+</LinearLayout>
