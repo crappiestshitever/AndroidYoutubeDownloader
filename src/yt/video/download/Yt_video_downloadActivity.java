@@ -62,7 +62,7 @@ public class Yt_video_downloadActivity extends Activity implements OnClickListen
 	private VideoBase base;
 	/** Called when the activity is first created. */
 	
-    @Override
+    
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (isOnline())
@@ -121,7 +121,7 @@ public class Yt_video_downloadActivity extends Activity implements OnClickListen
         return false;
     }
     
-    @Override
+    
     public void onBackPressed()
     {
     	debugger.debug(view.getUrl());
@@ -136,7 +136,7 @@ public class Yt_video_downloadActivity extends Activity implements OnClickListen
     		
     }
     
- 	@Override
+ 	
     public boolean onCreateOptionsMenu(Menu menu) 
     {
         MenuInflater inflater = getMenuInflater();
@@ -145,7 +145,7 @@ public class Yt_video_downloadActivity extends Activity implements OnClickListen
  
     }
  	
- 	@Override
+ 	
     public boolean onOptionsItemSelected(MenuItem item) 
     {
         // Handle item selection
@@ -209,7 +209,7 @@ public class Yt_video_downloadActivity extends Activity implements OnClickListen
 		    return false; 
 	}
     
-	@Override
+	
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
 		if (arg0 == b_next)
@@ -230,7 +230,7 @@ public class Yt_video_downloadActivity extends Activity implements OnClickListen
 						false // nicht unterbrechbar
 					); 
 					final Handler handler = new Handler() {
-			            @Override
+			            
 			            public void handleMessage(Message msg) {
 			                    if (msg.what == 0)
 			                    {
@@ -313,7 +313,7 @@ public class Yt_video_downloadActivity extends Activity implements OnClickListen
 			
 		
 
-			@Override
+			
 			public void run() {
 				// TODO Auto-generated method stub
 				try {

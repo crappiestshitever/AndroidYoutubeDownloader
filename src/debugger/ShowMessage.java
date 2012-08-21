@@ -20,7 +20,7 @@ public class ShowMessage{
 		 Handler handler = new Handler(Looper.getMainLooper());
 		 handler.post(new Runnable() {
 			
-			@Override
+			
 			public void run() {
 				// TODO Auto-generated method stub
 				Toast.makeText(acc.getApplicationContext(), s , Toast.LENGTH_SHORT).show();
@@ -35,7 +35,7 @@ public class ShowMessage{
 		 Handler handler = new Handler(Looper.getMainLooper());
 		 handler.post(new Runnable() {
 			
-			@Override
+			
 			public void run() {
 				// TODO Auto-generated method stub
 				Toast.makeText(acc.getApplicationContext(), s , Toast.LENGTH_LONG).show();
@@ -50,7 +50,7 @@ public class ShowMessage{
 		 Handler handler = new Handler(Looper.getMainLooper());
 		 handler.post(new Runnable() {
 			
-			@Override
+			
 			public void run() {
 				// TODO Auto-generated method stub
 				Toast.makeText(acc.getApplicationContext(), s , secs).show();

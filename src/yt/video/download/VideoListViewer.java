@@ -59,7 +59,7 @@ public class VideoListViewer extends ExpandableListActivity {
     ExpandableListAdapter mAdapter;
 	private Bundle bundle;
 
-    @Override
+    
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
@@ -70,7 +70,7 @@ public class VideoListViewer extends ExpandableListActivity {
         registerForContextMenu(getExpandableListView());
     }
 
-    @Override
+    
     public void onCreateContextMenu(final ContextMenu menu, View v, ContextMenuInfo menuInfo) {
     	
     	debugger.debug(v.getId());
@@ -96,7 +96,7 @@ public class VideoListViewer extends ExpandableListActivity {
     	
     }
 
-    @Override
+    
     public boolean onContextItemSelected(MenuItem item) {
     	
         ExpandableListContextMenuInfo info = (ExpandableListContextMenuInfo) item.getMenuInfo();
@@ -164,7 +164,7 @@ public class VideoListViewer extends ExpandableListActivity {
 	        			Handler handler = new Handler(Looper.getMainLooper());
 	        			handler.post(new Runnable() {
 	        				
-	        				@Override
+	        				
 	        				public void run() {
 	        					// TODO Auto-generated method stub
 	        					alert.show(); 

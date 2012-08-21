@@ -49,7 +49,7 @@ public class DownloadActivity extends Activity implements OnClickListener{
 	protected int Video_MBSize = 0; 
 	VideoBase base;
 	
-	@Override
+	
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
@@ -61,7 +61,7 @@ public class DownloadActivity extends Activity implements OnClickListener{
         this.bundle = bundle;
         init(bundle); 
     }
-	 @Override
+	 
     public boolean onCreateOptionsMenu(Menu menu) 
     {
         MenuInflater inflater = getMenuInflater();
@@ -69,7 +69,7 @@ public class DownloadActivity extends Activity implements OnClickListener{
         return true;
  
     }
- 	@Override
+ 	
     public boolean onOptionsItemSelected(MenuItem item) 
     {
         // Handle item selection
@@ -124,7 +124,7 @@ public class DownloadActivity extends Activity implements OnClickListener{
 //    	thumbnail.setOnClickListener(this);
 //    	showJpg(bundle.getString("thumbnail-path"), thumbnail);
 	}
-	@Override
+	
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		if (v == b_download)
@@ -137,7 +137,7 @@ public class DownloadActivity extends Activity implements OnClickListener{
 					false // nicht unterbrechbar
 				); 
 				final Handler handler = new Handler() {
-		            @Override
+		            
 		            public void handleMessage(Message msg) {
 		                    if (msg.what == 0)
 		                    {
@@ -156,7 +156,7 @@ public class DownloadActivity extends Activity implements OnClickListener{
 			
 			Thread try_download_thrad = new Thread(new Runnable() {
 				
-				@Override
+				
 				public void run() {
 					// TODO Auto-generated method stub
 					SDCard = false; 
@@ -220,7 +220,7 @@ public class DownloadActivity extends Activity implements OnClickListener{
 		Handler handler = new Handler(Looper.getMainLooper());
 		handler.post(new Runnable() {
 			
-			@Override
+			
 			public void run() {
 				// TODO Auto-generated method stub
 				alert.show(); 
